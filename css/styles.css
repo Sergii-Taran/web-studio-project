@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
 }
 
 ul,
@@ -34,6 +36,7 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
   color: #2e2f42;
 }
 
@@ -49,7 +52,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .logo {
@@ -88,7 +90,13 @@ button {
   color: #2e2f42;
 }
 
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #404bbf;
+}
+
 .header-address {
+  font-style: normal;
 }
 
 .header-address-list {
@@ -98,11 +106,15 @@ button {
 }
 
 .header-address-link {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: #404bbf;
 }
 
 /* ------- HERO ------- */
@@ -120,11 +132,19 @@ button {
 }
 
 .hero-btn {
+  background-color: #4d5ae5;
+
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
 }
 
 /* ------- FEATURES ------- */
@@ -147,6 +167,7 @@ button {
 /* ------- TEAM ------- */
 
 .team {
+  background-color: #f4f4fd;
 }
 
 .team-title {
@@ -156,6 +177,7 @@ button {
 }
 
 .team-list-item {
+  background-color: #ffffff;
 }
 
 .team-list-subtitle {
