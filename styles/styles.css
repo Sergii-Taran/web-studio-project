@@ -99,14 +99,24 @@ img {
 /* ------- header ------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
 }
 
 .header-logo {
+  margin-right: 76px;
 }
 
 .header-logo-accent {
@@ -114,6 +124,8 @@ img {
 }
 
 .header-nav-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-nav-item {
@@ -125,6 +137,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  display: block;
+  padding: 24px 0;
 }
 
 .header-nav-link:hover,
@@ -133,10 +148,12 @@ img {
 }
 
 .header-address {
-  font-style: normal;
+  margin-left: auto;
 }
 
 .header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
@@ -147,6 +164,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
+  font-style: normal;
 }
 
 .header-address-link:hover,
@@ -182,6 +201,11 @@ img {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
 
   display: block;
   margin: 0 auto;
@@ -204,9 +228,12 @@ img {
 }
 
 .features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .features-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .features-list-subtitle {
@@ -226,20 +253,32 @@ img {
 }
 
 .team-title {
+  margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.team-container {
+  padding: 32px 0;
 }
 
 .team-list-subtitle {
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-list-txt {
+  text-align: center;
 }
 
 /* ------------------------- */
@@ -251,12 +290,24 @@ img {
 }
 
 .portfolio-title {
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-list-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-subcontainer {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-list-subtitle {
@@ -276,18 +327,17 @@ img {
 }
 
 .footer-logo {
-  /* margin-bottom: 16px; */
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
   color: #f4f4fd;
-  /* margin-bottom: 16px; */
 }
 
 .footer-txt {
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
 }
 
 /* ---------------------- */
